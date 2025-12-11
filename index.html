@@ -3,13 +3,37 @@
 <head>
 <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
 		<!-- include ar.js for a-frame -->
-		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+		<script src="https://raw.githubusercontent.com/Luke140000/WelcomeToExpo/refs/heads/main/tiger.patt"></script>
 	</head>
 	<body>
 		<a-scene embedded arjs>
-     <a-marker type="pattern" url="your-custom-marker.patt">
+     <a-marker type="pattern" url="tiger.patt">
 			<!-- create your AR content here -->
-			
+			  <a-box 
+            color="#F54927" 
+            depth="4" 
+            height="4" 
+            width="10" 
+            position="0 1 -10"
+            animation="
+            property: rotation;
+            from: 0 0 0;
+            to: 0 0 360;
+            dur: 2000;
+            "
+            ></a-box>
+            <a-text 
+            value="WELCOME TO THE EXPO!" 
+            position="-4 1 -8"
+            color="black" 
+            width="15"
+            animation="
+            property: rotation;
+            from: 0 0 0;
+            to: 0 0 360;
+            dur: 2000;
+            "
+            ></a-text>
 			
 			</a-marker>
 
